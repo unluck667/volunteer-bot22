@@ -8,8 +8,8 @@ from telegram.ext import (
     ContextTypes,
 )
 
-TOKEN = os.getenv("TOKEN")   # токен берётся из переменных
-ADMIN_ID =  903089622  # твой Telegram ID
+TOKEN = os.getenv("TOKEN")  # токен бота
+ADMIN_ID = int(os.getenv("ADMIN_ID", 0))  # твой Telegram ID
 
 user_state = {}
 

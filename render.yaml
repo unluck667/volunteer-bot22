@@ -1,6 +1,12 @@
 services:
-  - type: worker
+  - type: web
     name: telegram-bot
-    runtime: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: python bot.py
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python bot.py"
+    envVars:
+      - key: TOKEN
+        value: "8599078171:AAE4YSTeZv0Z1ZL0EAVM_LHJNeS_NKZGTBY"
+      - key: ADMIN_ID
+        value: "903089622"
