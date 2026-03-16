@@ -8,7 +8,7 @@ from telegram.ext import (
     ContextTypes,
 )
 
-TOKEN = os.getenv("8599078171:AAE4YSTeZv0Z1ZL0EAVM_LHJNeS_NKZGTBY")   # токен берётся из переменных
+TOKEN = os.getenv("TOKEN")   # токен берётся из переменных
 ADMIN_ID =  903089622  # твой Telegram ID
 
 user_state = {}
